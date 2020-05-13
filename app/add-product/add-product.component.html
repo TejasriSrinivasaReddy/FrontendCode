@@ -1,0 +1,54 @@
+
+<form>
+    <div id="add1" class="col-md-4" style="height:1000px">
+            
+<div class="form-group">
+    Category
+    <div class="form-control">
+        <label class="radio-inline">
+            <input type="radio" value="Electronics"[(ngModel)]=" productCategory" name="productCategory" >Electronics
+        </label>
+        <label class="radio-inline">
+            <input type="radio" value="Fashion"[(ngModel)]=" productCategory" name="productCategory" >Fashion
+        </label>
+        <label class="radio-inline">
+            <input type="radio" value="Essentials"[(ngModel)]=" productCategory" name="productCategory" >Essentials
+        </label>
+    </div>
+</div>&nbsp;&nbsp;
+
+<div class="form-group">
+    <label for="productSubCategory">
+        productSubCategory
+    </label>
+    <select id="productSubCategory" name="productSubCategory" [(ngModel)]="productSubCategory" class="form-control">
+        <option value="SmartPhone">SmartPhone</option>
+        <option value="Refrigerator">Refrigerator</option>
+        <option value="TV">TV</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Food">Food</option>
+        <option value="Cleaning">Cleaning</option>
+        <option value="Hygiene">Hygiene</option>
+        <option value="T-shirt">T-Shirt</option>
+        <option value="Jeans">Jeans</option>
+        <option value="Shirt">Shirt</option>
+        <option value="Trouser">Trouser</option>
+    </select>
+</div>
+&nbsp;&nbsp;
+<fieldset class="form-group">
+    <input type="text"  class="form-control" [(ngModel)]="productDescription"id="productDescription" name="productDescription" placeholder="product description">
+</fieldset>
+<fieldset class="form-group">
+    <input type="text"  class="form-control" [(ngModel)]="productName"id="productName" name="productName" placeholder="product name">
+</fieldset>
+<fieldset class="form-group">
+    <input type="number"  class="form-control" [(ngModel)]=" productPrice"id="productPrice" name="productPrice" placeholder="product price">
+</fieldset>
+<fieldset class="form-group">
+    <input type="text"  class="form-control" [(ngModel)]=" unitStock"id="unitStock" name="unitStock" placeholder="unit stock">
+</fieldset>
+
+     <button type="submit" class="btn btn-primary btn-block" (click)="addProduct()">Add Product</button>
+</div>
+</form>

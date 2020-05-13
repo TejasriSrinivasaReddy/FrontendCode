@@ -1,0 +1,14 @@
+#signin{
+    width:500px;
+    height:900px;
+    padding-top: 100px;
+    color:#05285b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   margin:auto;
+  
+}
+body{
+    background: url("C:\Users\Admin\Angular\shopping2\src\assets\signin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

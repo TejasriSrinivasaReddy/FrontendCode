@@ -1,0 +1,75 @@
+<head>
+    <title>Shopping</title>
+</head>
+
+<body>
+        <div class="row">
+            <div class="col-md-8 text-center" style=" background-color: cornflowerblue;height: 1000px;">
+                <div class="logo float-left">
+                    <img src="" class="img-fluid" alt="logo">
+            </div>
+            <div class="btn-group float-right" role="group">
+                <button type="button" class="btn btn-link text-light">Home</button>
+                <button type="button" class="btn btn-link text-light">About</button>
+                <button type="button" class="btn btn-link text-light">Contact</button>
+                </div>
+               
+                <blockquote class="display-2 text-light text-center"><strong>Exciting Products , awesome shopping experience</strong></blockquote>
+                <div class="h2 text-center text-light">Online Shopping platform which gives wide varities of products to choose from...</div>
+            </div>
+            <div id="second" class="col-md-4" style="height: 1000px;">
+                <div id="top">
+               
+            </div>
+                <div id="signin" class="display-4">SignUp</div>
+                <div class="h5"><a href="#">or register here</a></div><br><br>
+                <form action="#" onsubmit="return validate()">
+                    <fieldset class="form-group">
+                    <input type="text" class="form-control" [(ngModel)]="firstName"id="firstName" name="firstName" placeholder="Your Name">
+                    <span id="error_msg" style="color: red">*</span>
+                </fieldset>
+                    <fieldset class="form-group">
+                    <input type="text" required class="form-control" [(ngModel)]="lastName"id="lastName" name="lastName" placeholder="Last Name">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <input type="text" class="form-control" [(ngModel)]="phoneNumber" id="phoneNumber" name="phoneNumber" placeholder="Phone number">
+                        
+                    </fieldset>
+                   
+                        <fieldset class="form-group">
+                            <input type="text" class="form-control" [(ngModel)]="email" id="email" name="email" placeholder="Email Id">
+                            </fieldset>
+                        <fieldset class="form-group">
+                            <input type="password" class="form-control"[(ngModel)]="password" id="password" name="password" placeholder="Password">
+                        </fieldset> 
+                            <fieldset class="form-group">
+                                <input type="text"  class="form-control" [(ngModel)]="gender"id="gender" name="gender" placeholder="Your gender M/F">
+                                </fieldset>
+                    <fieldset class="form-group">
+                        <input type="text"[(ngModel)]="city" id="city" name="city"class="form-control" placeholder="Your city">
+                    </fieldset>
+                   
+                        
+                        <fieldset class="form-group">
+                        <input type="checkbox" name="check">I agree to terms and conditions.<br>
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary btn-block" routerLink="/otp" (click)="register()">Submit</button>
+                    Already have an Account?<a routerLink="/signin">Sign in</a>
+            </form></div>
+        </div>
+        
+    <script type="text/javascript">
+    
+    function validate(){
+        var firstName=document.getElementById("firstName");
+        if(firstName==""){
+            document.getElementById("error_msg").innerHTML="This is required";
+            firstName.focus();
+            return false;
+        }
+        return true;
+    }
+    </script>
+  
+
+</body>

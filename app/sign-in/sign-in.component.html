@@ -1,0 +1,15 @@
+<body>
+<div id="signin" class="display-4">Sign in !!
+                <form action="#">
+                    <div id="signin2">
+                       
+                    <fieldset class="form-group">
+                      &nbsp;
+                        <input type="text" class="form-control" [(ngModel)]="email" id="email" name="email" placeholder="Email Id">
+                        </fieldset></div>
+                    <fieldset class="form-group">
+                        <input type="password" class="form-control" [(ngModel)]="password" id="password" name="password" placeholder="Password">
+                   <br>
+                    <button type="submit" class="btn btn-primary btn-block" routerLink="/otp"(click)="login()">Submit</button>
+</fieldset></form></div>
+</body>
